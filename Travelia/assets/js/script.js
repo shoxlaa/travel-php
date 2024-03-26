@@ -26,3 +26,12 @@ const toggleNav = function()
 }
 
 addEventOnElement(navTogglers, "click",toggleNav);
+
+
+//  #Header 
+
+const header = document.querySelector("[data-header]"); 
+
+window.addEventListener("scroll",()=>{
+    header.classList[window.scrollY>100 ?"add":"remove" ]("active");
+})
